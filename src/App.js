@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Switch,
-} from "react-router-dom";
-import Users from "./user/pages/Users";
-import NewPlace from "./places/pages/NewPlace";
+  Switch
+} from 'react-router-dom';
 
-function App() {
+import Users from './user/pages/Users';
+import NewPlace from './places/pages/NewPlace';
+
+const App = () => {
   return (
     <Router>
       <Switch>
@@ -22,6 +23,6 @@ function App() {
       </Switch>
     </Router>
   );
-}
+};
 
 export default App;
